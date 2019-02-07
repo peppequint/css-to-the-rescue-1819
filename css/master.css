@@ -1,7 +1,7 @@
 /* base css */
 @import "base/colors.css";
 @import "base/typography.css";
-@import "base/normalize.css";
+@import "base/reset.css";
 
 /* layout css */
 @import "";

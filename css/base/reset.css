@@ -1,4 +1,4 @@
-body {
+* {
   box-sizing: border-box;
 }
 
@@ -12,4 +12,26 @@ h6,
 p,
 ul {
   margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button,
+input,
+textarea {
+  background: none;
+  border: 0;
+  outline: none;
+}
+
+button:active,
+input:active,
+textarea:active,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
 }
