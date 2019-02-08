@@ -1,6 +1,0 @@
-body {
-  display: grid;
-  grid-template-rows: 25vh 1fr 1fr;
-  grid-template-columns: 1fr;
-  width: 100%;
-}
