@@ -1,19 +1,14 @@
 /* base css */
 @import "base/colors.css";
-@import "base/typography.css";
 @import "base/reset.css";
+@import "base/typography.css";
 
 /* layout css */
+@import "layout/footer.css";
 @import "layout/grid.css";
 @import "layout/header.css";
+@import "layout/main.css";
 
 /* modules css */
-/* @import "modules/header-title.css"; */
-@import "modules/title.css";
 
 /* state css */
-@import "state/header.css";
-@import "state/rotate.css";
-
-/* animation css */
-/* @import "state/animation/background.css"; */
