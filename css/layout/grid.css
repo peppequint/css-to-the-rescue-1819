@@ -1,37 +1,36 @@
-.container {
+.l-container {
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(8, 12.5%);
   grid-template-rows: repeat(8, 12.5%);
   grid-template-areas:
-    "header header header main main main main main"
-    "header header header main main main main main"
-    "header header header main main main main main"
-    "aside aside aside main main main main main"
-    "aside aside aside main main main main main"
-    "aside aside aside main main main main main"
-    "aside aside aside main main main main main"
+    "header header main main main main main main"
+    "header header main main main main main main"
+    "aside aside main main main main main main"
+    "aside aside main main main main main main"
+    "aside aside main main main main main main"
+    "aside aside main main main main main main"
+    "aside aside main main main main main main"
     "footer footer footer footer footer footer footer footer";
   width: 100%;
 }
 
-#header {
-  background-color: green;
+.l-header {
   grid-area: header;
 }
 
-#main {
+.l-main {
   background-color: red;
   grid-area: main;
   overflow: scroll;
 }
 
-#aside {
+.l-aside {
   background-color: blue;
   grid-area: aside;
 }
 
-#footer {
+.l-footer {
   background-color: yellow;
   grid-area: footer;
 }

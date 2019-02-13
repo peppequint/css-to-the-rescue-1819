@@ -1,0 +1,20 @@
+.m-logo {
+  color: var(--color-grey);
+  max-width: 250px;
+  transition: 0.2s ease-in;
+}
+
+.m-logo:hover {
+  transform: rotate(360deg);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+.m-logo > span {
+  font-size: 2.5rem;
+}
+
+.m-logo > p {
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}

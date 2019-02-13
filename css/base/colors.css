@@ -1,0 +1,8 @@
+:root {
+  --color-grey: 59, 59, 59;
+  --color-orange: 228, 141, 122;
+}
+
+body {
+  background-color: rgba(var(--color-grey), 0.1);
+}
