@@ -1,61 +1,53 @@
 @keyframes resize {
   0% {
-    grid-template-areas:
-      "header header header header header header header header"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "footer footer footer footer footer footer footer footer";
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 1fr 2fr 3fr;
   }
 
   25% {
-    grid-template-areas:
-      "aside aside header header header header header header"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "footer footer footer footer footer footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 
   50% {
-    grid-template-areas:
-      "aside aside header header header header header header"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside footer footer footer footer footer footer";
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-rows: 3fr 2fr 1fr;
   }
 
   75% {
-    grid-template-areas:
-      "header header header header header header header header"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "footer footer footer footer footer footer footer footer";
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
   }
 
   100% {
-    grid-template-areas:
-      "aside aside header header header header header header"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "aside aside main main main main main main"
-      "footer footer footer footer footer footer footer footer";
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 1fr 2fr 3fr;
+  }
+}
+
+@keyframes border {
+  0% {
+    border-radius: 231px 54px 198px 101px;
+    background-color: #31538d;
+  }
+
+  25% {
+    border-radius: 101px 231px 54px 198px;
+    background-color: #8d3131;
+  }
+
+  50% {
+    border-radius: 198px 101px 231px 54px;
+    background-color: #84318d;
+  }
+
+  75% {
+    border-radius: 54px 198px 101px 231px;
+    background-color: #618d31;
+  }
+
+  100% {
+    border-radius: 231px 54px 198px 101px;
+    background-color: #31538d;
   }
 }

@@ -1,20 +1,28 @@
+.m-rect {
+  background-color: white;
+  border: 5px solid white;
+  mix-blend-mode: hard-light;
+}
+.m-rect:nth-child(5) {
+  animation: border 3000ms ease infinite both;
+  /* animation: color 3000ms ease infinite both; */
+  background-color: #31538d;
+  border-radius: 231px 54px 198px 101px;
+  margin: 5px;
+}
 .m-logo {
-  color: var(--color-grey);
-  max-width: 250px;
-  transition: 0.2s ease-in;
+  bottom: 0;
+  height: 30px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(25deg) scale(0.75);
+  mix-blend-mode: screen;
+  width: 300px;
 }
 
-.m-logo:hover {
-  transform: rotate(360deg);
-  transition: 0.2s ease-in;
-  cursor: pointer;
-}
-.m-logo > span {
-  font-size: 2.5rem;
-}
-
-.m-logo > p {
-  font-size: 1rem;
-  font-weight: normal;
-  text-transform: uppercase;
+.m-logo--span {
+  color: white;
 }

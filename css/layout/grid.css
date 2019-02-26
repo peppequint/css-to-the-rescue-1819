@@ -1,14 +1,12 @@
 .l-container {
-  animation: resize 3000ms ease infinite both;
+  /* animation: resize 3000ms ease infinite both; */
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(8, 12.5%);
   grid-template-rows: repeat(8, 12.5%);
-  /* grid-template-columns: 1fr 1fr 1fr; */
-  /* grid-template-rows: 1fr 1fr 1fr; */
   grid-template-areas:
-    "header header header header header header header header"
-    "aside aside main main main main main main"
+    "header header main main main main main main"
+    "header header main main main main main main"
     "aside aside main main main main main main"
     "aside aside main main main main main main"
     "aside aside main main main main main main"
@@ -19,13 +17,19 @@
 }
 
 .l-header {
+  animation: resize 3000ms ease infinite both;
+  display: inline-grid;
   grid-area: header;
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-rows: 1fr 2fr 3fr;
+  height: 100%;
+  max-width: 100%;
+  position: relative;
 }
 
 .l-main {
   background-color: red;
   grid-area: main;
-  overflow: scroll;
 }
 
 .l-aside {
