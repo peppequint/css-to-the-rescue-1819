@@ -1,14 +1,14 @@
 .l-container {
-  animation: resize 30000ms ease infinite both;
+  animation: resize 3000ms ease infinite both;
   display: grid;
   height: 100vh;
-  /* grid-template-columns: repeat(8, 12.5%);
-  grid-template-rows: repeat(8, 12.5%); */
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(8, 12.5%);
+  grid-template-rows: repeat(8, 12.5%);
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-rows: 1fr 1fr 1fr; */
   grid-template-areas:
-    "header header main main main main main main"
-    "header header main main main main main main"
+    "header header header header header header header header"
+    "aside aside main main main main main main"
     "aside aside main main main main main main"
     "aside aside main main main main main main"
     "aside aside main main main main main main"

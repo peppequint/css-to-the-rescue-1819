@@ -1,26 +1,61 @@
 @keyframes resize {
   0% {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header header header header header header"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "footer footer footer footer footer footer footer footer";
   }
 
   25% {
-    grid-template-columns: 1fr 2fr 3fr;
-    grid-template-rows: 1fr 2fr 3fr;
+    grid-template-areas:
+      "aside aside header header header header header header"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "footer footer footer footer footer footer footer footer";
   }
 
   50% {
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas:
+      "aside aside header header header header header header"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside footer footer footer footer footer footer";
   }
 
   75% {
-    grid-template-columns: 3fr 2fr 1fr;
-    grid-template-rows: 3fr 2fr 1fr;
+    grid-template-areas:
+      "header header header header header header header header"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "footer footer footer footer footer footer footer footer";
   }
 
   100% {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "aside aside header header header header header header"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "aside aside main main main main main main"
+      "footer footer footer footer footer footer footer footer";
   }
 }
