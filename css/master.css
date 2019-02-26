@@ -13,3 +13,4 @@
 @import "modules/logo.css";
 
 /* states css */
+@import "state/animation.css";
