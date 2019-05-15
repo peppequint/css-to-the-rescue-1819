@@ -1,0 +1,31 @@
+.m-dishes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.m-dishes--heading {
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.m-dishes--name {
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.m-dishes--title {
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.m-dishes--addition {
+  text-transform: capitalize;
+  width: 75%;
+}
+
+.m-dishes--addition,
+.m-dishes--addition + div {
+  margin-top: 0.5rem;
+}
