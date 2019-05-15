@@ -10,6 +10,8 @@
 @import "layout/main.css";
 
 /* modules css */
+@import "modules/card.css";
+@import "modules/dishes.css";
 @import "modules/logo.css";
 
 /* states css */
