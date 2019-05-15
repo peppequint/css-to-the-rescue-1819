@@ -1,0 +1,19 @@
+.l-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  width: 80vw;
+}
+
+.l-alpha {
+  height: 100%;
+  position: absolute;
+  transform: rotateX(20deg) rotateY(-25deg) rotateZ(10deg) perspective(40000px);
+  transform-origin: center center;
+  transform-style: preserve-3d;
+  width: 100%;
+}
