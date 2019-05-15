@@ -1,0 +1,105 @@
+.m-card {
+  background-color: white;
+  background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
+  border: 2px solid black;
+  height: 100%;
+  padding: 5rem 2rem 2rem;
+  position: absolute;
+  width: 100%;
+}
+
+.m-card--check {
+  left: 2rem;
+  position: absolute;
+  top: 2rem;
+  z-index: 1000 !important;
+}
+
+.m-card--first {
+  animation: first 2000ms ease infinite both;
+  transform: translateZ(0px);
+  z-index: 100;
+}
+
+.m-card--first:checked,
+.m-card--first:checked ~ .m-card--first {
+  animation: leave 1000ms ease forwards;
+}
+
+.m-card--second {
+  animation: second 2000ms ease infinite both;
+  animation-delay: 0.5s;
+  transform: translateZ(-10px);
+  z-index: 90;
+}
+
+.m-card--second:checked,
+.m-card--second:checked ~ .m-card--second {
+  animation: leave 1000ms ease forwards;
+}
+
+.m-card--third {
+  animation: third 2000ms ease infinite both;
+  animation-delay: 1s;
+  transform: translateZ(-20px);
+  z-index: 80;
+}
+
+.m-card--third:checked,
+.m-card--third:checked ~ .m-card--third {
+  animation: leave 1000ms ease forwards;
+}
+
+.m-card--fourth {
+  animation: fourth 2000ms ease infinite both;
+  animation-delay: 1.5s;
+  transform: translateZ(-30px);
+  z-index: 70;
+}
+
+.m-card--fourth:checked,
+.m-card--fourth:checked ~ .m-card--fourth {
+  animation: leave 1000ms ease forwards;
+}
+
+.m-card--fifth {
+  animation: fifth 2000ms ease infinite both;
+  animation-delay: 2s;
+  transform: translateZ(-40px);
+  z-index: 60;
+}
+
+.m-card--fifth:checked,
+.m-card--fifth:checked ~ .m-card--fifth {
+  animation: leave 1000ms ease forwards;
+}
+
+.m-card--sixth {
+  animation: sixth 2000ms ease infinite both;
+  animation-delay: 2.5s;
+  transform: translateZ(-50px);
+  z-index: 50;
+}
+
+.m-card--sixth:checked,
+.m-card--sixth:checked ~ .m-card--sixth {
+  animation: leave 1000ms ease forwards;
+}
+
+.m-card--seventh {
+  animation: seventh 2000ms ease infinite both;
+  animation-delay: 3s;
+  transform: translateZ(-60px);
+  z-index: 40;
+}
+
+.m-card--seventh:checked,
+.m-card--seventh:checked ~ .m-card--seventh {
+  animation: leave 1000ms ease forwards;
+}
+
+.m-card--trigger {
+  left: 4rem;
+  position: absolute;
+  top: 1.75rem;
+}
