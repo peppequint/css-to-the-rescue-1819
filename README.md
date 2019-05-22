@@ -1,64 +1,154 @@
-# CSS to the Rescue @cmda-minor-web 18-19
+<div align="center">
+	<h1 align='center'>Restaurant menu</h1>
+<img align='center' src="./img/screenshot-application.png" width="620" />
+</div>
+<p align="center">
+	Interactive restaurant menu, only made with CSS.
+	<br>
+	<a href="https://peppequint.github.io/css-to-the-rescue-1819/">Live demo</a>
+</p>
+<br>
 
-_This course is in English_
+## Table of contents
 
-In this three week course you are going to create an innovative, pleasurable user experience by using CSS.
+- [Clone](#clone)
+- [Concept](#concept)
+- [Restrictions](#restricions)
+- [Methodology](#methodology)
+- [Status](#status)
+- [Sources](#sources)
 
-## Learning goals
-- _You understand the broader scope of CSS: You can show that CSS can be used for more than just styling web pages._
-- _You understand the progressive enhancement parts of CSS: You can show that you can use the cascade, inheritance and specificity in your project_
-- _You understand the interactive parts of CSS: Is the UX fully enhanced within in given CSS scope?_
-- _You have been experimenting: Have the learning goals been stretched?_
+## Clone
 
-[Rubric](https://docs.google.com/spreadsheets/d/1Xv48MSiACNmnM6nXpGGUb8mJDC459uSaxJszO_zLEp8/edit?usp=sharing)
+```shell
+# Clone repository
+git clone https://github.com/peppequint/css-to-the-rescue-1819.git
 
-## Programm
+# Go to the repository
+cd css-to-the-rescue-1819
+```
 
-### Week 1 - 👁 C what you did there
+## Concept
 
-[See all the details of week 1 here](week1/).
+For this assignment I have made a restaurant menu. The concept is based on a table with four chairs in a restaurant. Each person can select there preferred dishes for the evening and it will be served to there table.
 
-Goals of this week: 
+### Only CSS
 
-- Be inspired
-- Understand the cascade, inheritance and specificity
-- Get going!
+During this assignment I did not wrote any line of Javascript. So every interaction is made with checkboxes and lots and lots of animations.
 
-<!-- [Opdrachten](https://drive.google.com/open?id=1OVhWQNaCgSluYviTKKWcApkyPd23xow1PiExb8GYANM) -->
+#### Checkboxes
 
-<!-- [Slides](https://drive.google.com/open?id=1Rjl9xqXoKniQSRJPdkU1O5YwWC33SJK8KiV0a-H_xZU) -->
+The first customised shape I made was the knife at the bottom of every menu card. It is made with an input.
 
-### Week 2 - Create Stuff, 🙃 Smile 
+```html
+<input type="checkbox" class="m-card--check m-card--first" />
+```
 
-This week’s goals: Create stuff, break stuff, and learn from each other
+With the CSS below, I made different shapes and one with text to give it some context.
 
-<!-- [Opdrachten](https://drive.google.com/open?id=1GMDTdW3LycAYpZSFI6gk_lrKrx8-zLWrNh69aaVEH5Y) -->
+```css
+.m-card--check {
+  -webkit-appearance: none;
+  background-color: black;
+  bottom: 7rem;
+  border: 3px solid black;
+  border-radius: 100% 0% 96% 4% / 0% 0% 100% 100%;
+  color: white;
+  cursor: pointer;
+  display: block;
+  height: 2.5rem;
+  left: 45rem;
+  position: absolute;
+  width: 12rem;
+  z-index: 1000 !important;
+}
 
-<!-- [Slides](https://drive.google.com/open?id=1IqQeu1m0dQiSC_KCvrn8eencAgtYe7X6qT-gm0n9Bmc) -->
+.m-card--check:before {
+  background-color: black;
+  border-bottom-left-radius: 2rem;
+  content: "";
+  display: block;
+  height: 0.75rem;
+  left: -2.5rem;
+  position: absolute;
+  top: 0.45rem;
+  width: 2.5rem;
+}
 
-### Week 3 - 🎪 Show time
+.m-card--check:after {
+  content: "Keuze gemaakt";
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  left: 0.75rem;
+  position: relative;
+  top: 0.15rem;
+}
+```
 
-Goals: Blow us away
+To see if someone has made there choice by clicking on the knife, this line of code activates the animation to 'throw away' the menu card.
 
-<!-- [Opdrachten](https://drive.google.com/open?id=13pKQu72pshaEzKw9q5JHLa-aop85nMP6nDCdqioWjoQ) -->
+```css
+.m-card--first:checked,
+.m-card--first:checked ~ .m-card--first {
+  animation: leave 1000ms ease forwards;
+}
+```
 
-<!-- [Slides](https://drive.google.com/open?id=1BSzGYNLMgtHD4HRnK7f0DgyTv4Pg3xsQwD_eYNo7v0Y) -->
+Also there are custom made 'icon' checkboxes. To achieve this, I turned off the opacity of the `input` and overwritten it with a `div`.
+To style this new `div` I used, the same as the knife, `::before` & `::after` to create customised shapes.
 
+```css
+.m-checkbox--check {
+  border-bottom: 15px solid black;
+  border-left: 15px solid black;
+  border-right: 15px solid black;
+  border-top: 1px solid black;
+  border-top-right-radius: 70px;
+  border-top-left-radius: 70px;
+  cursor: pointer;
+  display: inline-block;
+  height: 1.25rem;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 150ms ease;
+  width: 1.5rem;
+}
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
+.m-checkbox--check::before {
+  background-color: black;
+  bottom: -18px;
+  content: "";
+  height: 4px;
+  left: -22px;
+  position: absolute;
+  width: 2.85rem;
+}
 
-<!-- ☝️ replace this description with a description of your own work -->
+.m-checkbox--check::after {
+  background-color: black;
+  content: "";
+  height: 4px;
+  left: -2px;
+  position: absolute;
+  top: -5px;
+  width: 5px;
+}
+```
 
-<!-- Add a nice image here at the end of the week, showing off your shiny frontend 📸 -->
+## Restrictions
 
-<!-- Maybe a table of contents here? 📚 -->
+For this project I had to comply with two restrictions. I have chosen the following restrictions:
 
-<!-- How about a section that describes how to install this project? 🤓 -->
+- [ ] Two colours
+- [ ] No squares, no rectangles, no circles, no triangles
 
-<!-- ...but how does one use this project? What are its features 🤔 -->
+## Methodology
 
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
+Also I used a methodology for this project. In this case, BEM. Sometimes it was really hard to follow the rules of BEM when you are experimenting with CSS, but for serious business project I think this methodology is really useful.
 
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
+## Sources
 
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+- [CSS Transform Playground](https://css-transform.moro.es/)
+- [Wooden pattern](#https://www.transparenttextures.com/patterns/wood-pattern.png)
+- [Noise pattern](#http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62)
