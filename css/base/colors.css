@@ -1,6 +1,6 @@
 :root {
-  --color-grey: 59, 59, 59;
-  --color-orange: 228, 141, 122;
+  --color-beige: hsl(45, 25%, 94%);
+  --color-blue: hsl(213, 92%, 32%);
 }
 
 body {
