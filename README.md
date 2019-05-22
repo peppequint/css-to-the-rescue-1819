@@ -150,5 +150,5 @@ Also I used a methodology for this project. In this case, BEM. Sometimes it was 
 ## Sources
 
 - [CSS Transform Playground](https://css-transform.moro.es/)
-- [Wooden pattern](#https://www.transparenttextures.com/patterns/wood-pattern.png)
-- [Noise pattern](#http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62)
+- [Wooden pattern](https://www.transparenttextures.com/patterns/wood-pattern.png)
+- [Noise pattern](http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62)
