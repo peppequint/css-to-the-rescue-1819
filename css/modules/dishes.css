@@ -80,10 +80,5 @@
 }
 
 .m-dishes--checkbox input[type="checkbox"]:checked ~ .m-checkbox--check {
-  animation: choose 7000ms ease forwards;
-}
-
-.m-dishes--checkbox input[type="checkbox"]:checked ~ .m-checkbox--check::after {
-  /* opacity: 1;
-  transform: rotate(45deg); */
+  animation: choose 200ms ease forwards;
 }
