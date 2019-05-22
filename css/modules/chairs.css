@@ -1,7 +1,7 @@
 .m-chair {
   align-items: center;
-  animation: float 1.8s infinite linear both;
   background: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+  background-color: white;
   border: 3px solid black;
   border-radius: 68% 32% 46% 54% / 43% 54% 46% 57%;
   display: flex;
@@ -12,25 +12,29 @@
 }
 
 .m-chair:nth-child(1) {
+  animation: pulse 2s infinite, float 1.8s infinite linear both;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0.6);
   left: 0;
   top: 0;
-  transform: rotate(90deg);
 }
 
 .m-chair:nth-child(2) {
-  bottom: 5rem;
+  animation: float 1.8s infinite linear both;
+  bottom: 0;
   left: 0;
   transform: rotate(0deg);
 }
 
 .m-chair:nth-child(3) {
+  animation: float 1.8s infinite linear both;
   right: 0;
   top: 0;
   transform: rotate(180deg);
 }
 
 .m-chair:nth-child(4) {
-  bottom: 5rem;
+  animation: float 1.8s infinite linear both;
+  bottom: 0;
   right: 0;
   transform: rotate(250deg);
 }
