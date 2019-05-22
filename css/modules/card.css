@@ -2,17 +2,55 @@
   background-color: white;
   background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
   border: 2px solid black;
+  border-radius: 33% 67% 50% 50% / 42% 44% 56% 58%;
   height: 100%;
-  padding: 5rem 2rem 2rem;
+  padding: 8rem 17rem 9rem 17rem;
   position: absolute;
   width: 100%;
 }
 
 .m-card--check {
-  left: 2rem;
+  -webkit-appearance: none;
+  background-color: black;
+  bottom: 7rem;
+  border: 3px solid black;
+  border-radius: 100% 0% 96% 4% / 0% 0% 100% 100%;
+  color: white;
+  cursor: pointer;
+  display: block;
+  height: 2.5rem;
+  left: 45rem;
   position: absolute;
-  top: 2rem;
+  width: 12rem;
   z-index: 1000 !important;
+}
+
+.m-card--check:before {
+  background-color: black;
+  border-bottom-left-radius: 2rem;
+  content: "";
+  display: block;
+  height: 0.75rem;
+  left: -2.5rem;
+  position: absolute;
+  top: 0.45rem;
+  width: 2.5rem;
+}
+
+.m-card--check:after {
+  content: "Keuze gemaakt";
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  left: 0.75rem;
+  position: relative;
+  top: 0.15rem;
+}
+
+.m-card--trigger {
+  left: 5rem;
+  position: absolute;
+  top: 2.15rem;
 }
 
 .m-card--first {
@@ -96,10 +134,4 @@
 .m-card--seventh:checked,
 .m-card--seventh:checked ~ .m-card--seventh {
   animation: leave 1000ms ease forwards;
-}
-
-.m-card--trigger {
-  left: 4rem;
-  position: absolute;
-  top: 1.75rem;
 }
