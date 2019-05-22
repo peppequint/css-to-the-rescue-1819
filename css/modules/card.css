@@ -1,10 +1,10 @@
 .m-card {
   background-color: white;
-  background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
-  border: 2px solid black;
+  background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+  border: 3px solid black;
   border-radius: 33% 67% 50% 50% / 42% 44% 56% 58%;
   height: 100%;
-  padding: 8rem 17rem 9rem 17rem;
+  padding: 5rem 17rem 9rem 17rem;
   position: absolute;
   width: 100%;
 }
@@ -134,4 +134,28 @@
 .m-card--seventh:checked,
 .m-card--seventh:checked ~ .m-card--seventh {
   animation: leave 1000ms ease forwards;
+}
+
+@media only screen and (max-width: 1300px) {
+  .m-card--check {
+    bottom: 6rem;
+    left: 30rem;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .m-card {
+    padding: 5rem 11rem 9rem 12rem;
+  }
+
+  .m-card--check {
+    bottom: 5rem;
+    left: 28rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .m-card--check {
+    left: 20rem;
+  }
 }
